@@ -1,0 +1,64 @@
+.topic-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.topic-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topic-header .back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.topic-header .back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.topic-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.progress-text {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.topic-content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.no-problems {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  color: #666;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .problems-grid {
+    grid-template-columns: 1fr;
+  }
+}

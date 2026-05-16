@@ -1,0 +1,141 @@
+.problem-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #2563eb;
+  position: relative;
+}
+
+.problem-card.completed {
+  border-left-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.problem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.problem-header h3 {
+  font-size: 18px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.level-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.level-badge.easy {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.level-badge.medium {
+  background-color: #fed7aa;
+  color: #92400e;
+}
+
+.level-badge.hard {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.problem-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.problem-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s, opacity 0.2s;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.link-btn.youtube {
+  background-color: #ffe5e5;
+  color: #c41e3a;
+}
+
+.link-btn.leetcode {
+  background-color: #e5f4ff;
+  color: #0066cc;
+}
+
+.link-btn.codeforces {
+  background-color: #f0e5ff;
+  color: #6c5ce7;
+}
+
+.link-btn.article {
+  background-color: #e5ffe5;
+  color: #1b5e20;
+}
+
+.problem-footer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+}
+
+.checkbox-btn {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.checkbox-btn:hover {
+  background-color: #eff6ff;
+  transform: translateY(-2px);
+}
+
+.checkbox-btn.checked {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-color: #059669;
+}
+
+.checkbox-btn.checked:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}

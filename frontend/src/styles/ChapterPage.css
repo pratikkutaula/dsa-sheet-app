@@ -1,0 +1,95 @@
+.chapter-page {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.chapter-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.chapter-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.chapter-content {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chapter-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.topics-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.topics-list {
+  display: grid;
+  gap: 15px;
+}
+
+.topic-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #2563eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.topic-item h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.view-problems-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.2s;
+}
+
+.view-problems-btn:hover {
+  transform: translateY(-2px);
+}
